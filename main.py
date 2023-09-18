@@ -8,7 +8,6 @@ import json
 import requests
 
 accessToken = "dBdNFFsh_ywi-VvikMkPjhpWsdH7kvHX_NLj4vDM07987oCDPwSpDIIIOflEsXX3"
- # genius = lyricsgenius.Genius(accessToken)
 genius = Genius(accessToken)
 
 
@@ -67,28 +66,4 @@ def getInfo():
     return render_template('base.html', artistName=artistName, songName=songName, songLyrics=songLyrics, imageURL=imageURL)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-"""
-
-@app.route('/processUserInput', methods=['POST'])
-def processUserInput():
-    userinput = request.form.get('userInput')
-    songName = genius.search_song(userinput)
-    artistName = genius.search_artist(userinput)
-    print(songName)
-    print(artistName)
-    
-    print(songName)
-    if songName:
-        artistName = songName.artist
-        return render_template('base.html', songName=songName, songLyrics='These are the lyrics for "Nights."', userInput=userinput)
-    else:
-        errorMessage = f'Song "{userinput}" not found.'
-        return render_template('error.html', errorMessage=errorMessage)
-
-
-
-
-
-
-"""
+    app.run(debug=False, host='0.0.0.0')
