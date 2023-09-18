@@ -1,0 +1,40 @@
+<!-- templates/base_lyrics.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>{{ songName }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/songs.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class='header'>
+        <div class="headerText">
+            <a href='https://genius.com/'>
+                <img src="{{ url_for('static', filename='image/geniuslogo.png') }}" alt="logo" class='logo' >
+            </a>
+            
+            <h1 class='songnamee'>{{ songName }} - {{artistName}}</h1>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="transitionBody">
+        <img class= 'artistPic' src="{{imageURL}}" alt="artistImage">
+            <h1 class="songtitleName">{{songName}}</h1>
+            <div class='textDiv'>
+                <h2>by {{artistName}} </h2>
+            </div>
+    </div>
+    <div class='transition'>
+    </div>
+    <div class='lyricsBody'>
+        <div class='actualLyrics'>
+            {% for line in songLyrics %}
+                <p class='lyrics-line'>{{ line }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

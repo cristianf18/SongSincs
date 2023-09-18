@@ -1,0 +1,317 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 41px; 
+  background-color: rgb(255, 255, 100); 
+  z-index: -1; 
+}
+
+#titleImage {
+  height: 35px;
+  position:static;
+  z-index: 0;
+}
+
+#logoImage  {
+  height: 32px;
+  position:absolute;
+  z-index:1;
+  left: 10px;
+  top: 5px;
+}
+
+#topSearch  {
+  position: absolute;
+  left: 55px;
+  z-index: 1;
+
+}
+
+.blackBar {
+  height: 41px;
+  width:100%;
+  position: static;
+  top:41px;
+  z-index: 4;
+  background-color: rgb(18, 18, 18);
+  justify-content: center;
+  align-items: center;
+}
+
+.albums {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  text-align: center;
+  margin-top: 12.5px;
+  left:31.59%;
+}
+
+.songs {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 12px;
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  margin-top: 12.5px;
+  left:41.15%;
+}
+
+.artists {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  left: 45%;
+  margin-top: 12.5px;
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  left:50%;
+
+}
+
+.charts {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 12.5px;
+  position: absolute;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+  border-color: white;
+  padding: 0px 2.5rem;
+  left:59.5%;
+}
+
+
+
+.smallContainer {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 175px;
+}
+
+.overlay-image {
+  position: absolute;
+  width: 665px;
+  height: auto;
+  right: 165px; /* Adjust as needed */
+  top:155px; /* Adjust as needed */
+  background-position: center center;
+}
+/*
+.olivia {
+  position: relative;
+  background-position: center center;
+  padding-bottom: 56.25%;
+  background-color: rgb(233, 233, 233);
+  background-repeat: repeat-x;
+  background-size: auto calc(100% + 1px);
+  background-image: url();
+}
+*/
+.news {
+  position: absolute;
+  top: 240px;
+}
+.newsHeader  {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.horizontal-line {
+  display: inline-block;
+  width: 300px; /* Adjust the width as needed */
+  height: 2px; /* Adjust the height as needed */
+  background-color: black;
+  margin-left: 10px; /* Adjust the margin-left to control the spacing between "NEWS" and the line */
+  margin-bottom: 3px;
+}
+
+
+
+
+.liveText1  {
+  position: relative;
+  color: rgb(0, 0, 0);
+  animation: typing 3s steps(22), blink .4s step-end infinite alternate;
+  white-space:nowrap;
+  letter-spacing: 4px;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family:Programme, Arial, sans-serif;
+  line-height: 1.45;;
+  font-size: 35px;
+  font-weight: 400;
+  top:60px;
+}
+
+@keyframes typing {
+  from {
+    width:0%
+  }
+  to  {
+    width:100%
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.biggerBlackBar {
+  width: 100%;
+  position: absolute;
+  height: 200px;
+  left: 0px;
+  background-color: black;
+  top: 640px;
+  justify-content: center;
+}
+
+.searchText {
+  color: rgb(255, 255, 100);
+  font-size: 50px;
+  font-family:Programme, Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top:20px;
+}
+
+.invisible-input {
+  border: none; 
+  background-color: transparent; 
+  text-align: center;
+  top: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 40px; 
+
+  /*border-bottom: 4px solid rgb(247, 247, 247);*/
+  outline: none;
+  z-index: 10;
+  padding: 5px;
+  outline:none;
+  z-index:10;
+
+
+}
+
+
+
+::placeholder {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  font-weight: bold;
+}
+
+.secondContainer  {
+  width:100%;
+  height: 600px;
+  position: absolute;
+  top:840px;
+}
+
+.Box  {
+  position: absolute;
+  text-align: center;
+  width: 20%;
+  height: 300px;
+
+  border-style: solid;
+  border-color: black;
+
+  padding: 10px;
+  top:20px;
+}
+
+.chartsBox {
+  position: absolute;
+  left: 50%; /* Set left to 50% to center horizontally */
+  transform: translateX(-50%); 
+}
+
+.artistsBox {
+  position: absolute;
+  left: 10%; /* Set left to 50% to center horizontally */
+  transform: translateX(-10%); 
+}
+
+.doja {
+  font-family:Programme, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  position: absolute;
+  margin-top: 25px;
+  width: 100%;
+  left: 0px;
+  text-align: center;
+  height:225px ;
+}
+
+
+.songsBox {
+  left:80%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.albumsBox  {
+  position: absolute;
+  left: 50%; /* Set left to 50% to center horizontally */
+  transform: translateX(-50%); 
+  top:350px
+}
+
+.niceText {
+  font-family:Programme, Arial, sans-serif;
+  font-size: .8em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-container {
+  padding-bottom: 1px; /* Adjust the padding as needed */
+  position: absolute;
+  border-bottom: 3px solid black; /* Set the border style and color */
+  width: 30%;
+  left: 100px;
+ 
+}
+
